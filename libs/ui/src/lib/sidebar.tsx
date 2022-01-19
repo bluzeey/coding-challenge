@@ -6,15 +6,15 @@ export interface SidebarProps {}
 
 export function Sidebar(props: SidebarProps) {
   const copyToClipboard=()=>{
-       const scheduleTitle=document.getElementById('title') as HTMLInputElement;
-       const schedule=document.getElementById("events") as HTMLInputElement;    
-       schedule?.select();
-       schedule.setSelectionRange(0,9999);
-       navigator.clipboard.writeText(schedule.value);
-       alert("Copied the text:" + schedule.value)
-  }
+   const scheduleTitle=document.getElementById('title') as HTMLInputElement;
+   const schedule=document.getElementById("events") as HTMLInputElement;    
+   schedule?.select();
+   schedule.setSelectionRange(0,9999);
+   navigator.clipboard.writeText(schedule.value);
+   alert("Copied the text:" + schedule.value)
+}
   return (
-  <div className="font-inter bg-slate-50 flex flex-col p-5 max-w-sm rounded shadow-md">
+    <div className="font-inter bg-slate-50 flex flex-col p-5 max-w-sm rounded shadow-md">
       <div className="flex justify-end">
         <FontAwesomeIcon className="bg-red-500 text-white px-1  rounded" icon={faTimes} size="2x" />
       </div>
