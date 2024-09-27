@@ -1,5 +1,6 @@
 import './sidebar.module.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes,faInfoCircle,faSortDown,faCheck} from '@fortawesome/free-solid-svg-icons'
 /* eslint-disable-next-line */
 export interface SidebarProps {}
 

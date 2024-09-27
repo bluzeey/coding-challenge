@@ -1,7 +1,6 @@
 // import styles from './app.module.css';
 // import { Sidebar } from '@coding-challenge/ui';
 import Sidebar from '../components/sidebar/sidebar'
-
 export function App() {
   return (
     <div className="grid justify-center m-auto">
